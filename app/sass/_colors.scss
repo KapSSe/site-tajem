@@ -1,0 +1,16 @@
+
+$blue: #00e0d0;
+$white: #ffffff;
+$black: #000000;
+
+@mixin text-color-tj{
+    color:$blue;
+}
+
+@mixin text-color-wt{
+    color:$white;
+}
+
+@mixin text-color-bl{
+    color:$black;
+}

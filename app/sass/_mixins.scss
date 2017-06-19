@@ -1,0 +1,28 @@
+
+
+@mixin upcase{
+    text-transform: uppercase;
+}
+
+@mixin bold{
+    font-weight: bold;
+}
+
+@mixin text-color-bl{
+    color:$blue;
+}
+
+@mixin text-color-wt{
+    color:$white;
+}
+
+@mixin text-color-bl{
+    color:$black;
+}
+
+@mixin bg-sc-welcome{
+    background: url(../res/img/bg_top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
