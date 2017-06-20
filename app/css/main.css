@@ -218,20 +218,41 @@ blockquote {
   padding-right: 20px; }
 
 .container-icons {
-  margin-top: 44px; }
+  margin-top: 44px;
+  display: block;
+  float: none;
+  clear: both; }
+
+.form-group-bot {
+  font-size: 0; }
 
 .mail-input {
+  display: inline-block;
   background: transparent;
   padding: 10px;
-  height: 45px;
   margin-top: 30px;
-  border: 2px solid grey; }
+  border: 2px solid grey;
+  font-size: 12px;
+  padding: 12px; }
 
-.btn-mail {
-  margin-left: 10px; }
+.bt-bot {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 0px;
+  background: gray url(../res/img/button_bottom.png) center no-repeat;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  width: 75px;
+  height: 45px;
+  vertical-align: bottom; }
 
 .footer-icon {
-  float: left; }
+  float: left;
+  margin-right: 10px; }
+
+.text-footer {
+  overflow: auto; }
 
 @media all and (max-width: 1200px) {
   body {
@@ -252,7 +273,14 @@ blockquote {
   .row-mg {
     margin: 10px 0; }
   .heading-news, .heading-client {
-    font-size: 1.75em; } }
+    font-size: 1.75em; }
+  .footer-left, .footer-center, .footer-right {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .footer-icon {
+    float: none;
+    padding: 10px; } }
 
 @media all and (max-width: 768px) {
   .nav {
@@ -270,10 +298,13 @@ blockquote {
   .gal-item {
     display: block;
     margin: auto;
-    width: 70%; }
+    width: 70%;
+    padding: 10px; }
   .story-content {
     margin: 0 auto;
     width: 87%; }
+  .team-des-after:after {
+    display: none; }
   .form-control {
     width: 80%; }
   .menu {
@@ -322,4 +353,6 @@ blockquote {
     margin-bottom: 60px; }
   .row-mg {
     margin-top: 10px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .container-icons {
+    margin-top: 24px; } }
