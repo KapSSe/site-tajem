@@ -261,7 +261,10 @@ blockquote {
   .carousel-indicators {
     display: none; }
   .carousel-control {
-    display: initial; } }
+    display: initial; }
+  .carousel {
+    margin: 0 auto;
+    width: 70%; } }
 
 @media all and (max-width: 1200px) {
   body {
