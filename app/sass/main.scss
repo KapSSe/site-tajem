@@ -162,6 +162,10 @@ blockquote{
     width: 70%;
 }
 
+.carousel-control{
+    display: none;
+}
+
 .carousel-heading:after{
     margin:35px auto;
     content:"";
@@ -319,6 +323,18 @@ margin-bottom:22.5%;
     overflow: auto;
 }
 
+
+@media all and (max-height:750px){
+
+    .carousel-indicators{
+        display: none;
+    }
+
+    .carousel-control{
+        display: initial;
+    }
+
+}
 
 @media all and (max-width:1200px){
     body{
