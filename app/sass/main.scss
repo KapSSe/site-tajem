@@ -62,7 +62,6 @@ blockquote{
     @include bold;
 }
 
-
 .link{
     @include text-color-wt;
     text-decoration: none;
@@ -72,6 +71,7 @@ blockquote{
     }
     
 }
+
 
 .sc {
     background-size: cover;
@@ -150,10 +150,12 @@ blockquote{
         font-size: 1em;
         line-height: 1.9em;
     }
-     
      &-footer{
         font-size:0.85em;
         line-height: 1.6em;
+    }
+    &-become{
+        display: block;
     }
 }
 
@@ -204,6 +206,11 @@ blockquote{
     background: none;
     border: 1px solid $blue;
     padding:10px;
+    &:hover{
+        background: none;
+        color:$blue;
+        border: 1px solid $blue;
+    }
 }
 
 .story-heading{
@@ -489,6 +496,7 @@ margin-bottom:22.5%;
     background: none;
     border: 1px solid $blue;
     padding:5px;
+  
 }
 
 

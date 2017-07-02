@@ -121,6 +121,9 @@ blockquote {
   font-size: 0.85em;
   line-height: 1.6em; }
 
+.text-become {
+  display: block; }
+
 .carousel {
   margin: 5vh auto;
   width: 70%; }
@@ -162,6 +165,10 @@ blockquote {
   background: none;
   border: 1px solid #00e0d0;
   padding: 10px; }
+  .btn-default:hover {
+    background: none;
+    color: #00e0d0;
+    border: 1px solid #00e0d0; }
 
 .story-heading {
   margin: 0; }

@@ -13,25 +13,26 @@
     <![endif]-->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
-	<section class="sc sc-welcome">
+	<section id="welcome" class="sc sc-welcome">
 		<header class="container header">
 			<div class="row row-mg">
 				<div class="col-sm-2 content-resp-center">
-					<a id="menu" class="logo" class="" href="#index.html"><img src="res/img/logo_small.png" alt=""></a>
+					<a id="menu" class="logo" href="#index.html"><img class="logoanimate" src="res/img/logo_small.png" alt=""></a>
 				</div>
 				<nav class="nav">
 					<div class="col-sm-10">
 						<ul class=" menu text-right">
-							<li class="menu__item"><a class="link" href="#">home</a></li>
-							<li class="menu__item"><a class="link" href="#">about</a></li>
-							<li class="menu__item"><a class="link" href="#">expertise</ga></li>
-							<li class="menu__item"><a class="link" href="#">teams</a></li>
-							<li class="menu__item"><a class="link" href="#">works</a></li>
-							<li class="menu__item"><a class="link" href="#">people say</a></li>
-							<li class="menu__item"><a class="link" href="#">contact</a></li>
+							<li class="menu__item"><a class="link" href="#welcome">home</a></li>
+							<li class="menu__item"><a class="link" href="#about">about</a></li>
+							<li class="menu__item"><a class="link" href="#expertise">expertise</a></li>
+							<li class="menu__item"><a class="link" href="#teams">teams</a></li>
+							<li class="menu__item"><a class="link" href="#works">works</a></li>
+							<li class="menu__item"><a class="link" href="#peoplesay">people say</a></li>
+							<li class="menu__item"><a class="link" href="#contacts">contact</a></li>
 						</ul>
 					</div>
 				</nav>
@@ -90,11 +91,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="story">
+	<section id="about" class="story">
 		<div class="container">
 			<div class="row row-mg-big">
 				<div class="col-sm-5 row-mg content-resp-center">
-					<img src="res/img/logo_big.png" alt="">
+					<img class="logobiganimate" src="res/img/logo_big.png" alt="">
 				</div>
 				<div class="col-sm-7 content-resp-center">
 					<h2 class="upc heading-story">we are awesome designers</h2>
@@ -106,16 +107,16 @@
 			</div>
 		</div>
 	</section>
-	<section class="sc sc-video">
+	<section id="video" class="sc sc-video">
 		<a href="" class="video-link row-video">
 			<img src="res/img/play.png" alt="">
 		</a>
 	</section>
-	<section class="sc sc-expertise">
+	<section id="expertise" class="sc sc-expertise">
 		<div class="container">
 			<div class="row row-mg text-center">
 				<h2 class="upc heading-expertise">expertise</h2>
-				<p class="subheading">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit</p>
+				<p class="subheading subheadinganimate">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit</p>
 				<div class="row row-mg-big">
 					<div class="col-sm-4 text-center expertise-item">
 						<img class="expertise-img" src="res/img/monitor.png" alt="">
@@ -153,7 +154,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="sc sc-team">
+	<section id="teams" class="sc sc-team">
 		<div class="container">
 			<div class="row row-mg-big text-center">
 				<h2 class="upc heading-team">meet our amazing team</h2>
@@ -180,14 +181,14 @@
 						<p class="team-des-after">marketing</p>
 					</div>
 				</div>
-				<div class="row text-center">
-					<p class="row-mg text-center text-become">Become a part of our dream team,let's join us !</p>
+				<div class="text-center become">
+					<p class="row-mg text-center">Become a part of our dream team,let's join us !</p>
 					<button class="row-mg btn-default">learn more</button>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="sc sc-gallery">
+	<section id="works" class="sc sc-gallery">
 		<div class="container row-mg-big">
 			<h2 class="upc heading-gal text-left ">our works</h2>
 			<a class="gal-link" href="">See all projects in dribble <img src="res/img/arrow.png" alt=""></a>
@@ -208,8 +209,7 @@
 		</div>
 		<div class="container text-center row-mg-md"><button class="row-mg btn-default">load now</button></div>
 	</section>
-	<section class="sc sc-about">
-		<div class="container"></div>
+	<section id="peoplesay" class="sc sc-about">
 		<div class="row row-mg-md">
 			<div class="about-content col-sm-offset-3 col-sm-6 col-sm-offset-3 text-center text-white">
 				<img class="row-mg" src="res/img/coma.png" alt="">
@@ -238,7 +238,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="sc sc-clients">
+	<section id="contacts" class="sc sc-clients">
 		<div class="row row-mg-big clients-container">
 			<div class="container col-sm-offset-1 col-sm-5">
                <div class="form-group form">
@@ -330,17 +330,9 @@
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#menu').click(function () {
-                $('.nav').slideToggle();
-            });
-			$('#menu').click(function () {
-                $('.text-carousel').slideToggle();
-				$('.carousel-control').slideToggle();
-            });
-        });
-    </script>
+    <script src="js/burger.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/animations.js"></script>
 </body>
 
 </html>
