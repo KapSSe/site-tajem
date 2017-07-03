@@ -66,11 +66,17 @@ html, body {
   max-width: 100%;
   overflow-x: hidden; }
 
-a:hover {
+a:link {
   text-decoration: none; }
 
-a:active {
-  text-decoration: none !important; }
+a:link {
+  text-decoration: none; }
+
+a:link {
+  text-decoration: none; }
+
+a:link {
+  text-decoration: none; }
 
 blockquote {
   border: none;
@@ -84,8 +90,11 @@ blockquote {
     display: inline-block; }
   .menu__bottom {
     text-transform: uppercase;
-    padding: 10px;
-    display: inline-block; }
+    padding-right: 10px;
+    display: inline-block;
+    color: white; }
+    .menu__bottom:hover {
+      text-decoration: none; }
 
 .upc {
   text-transform: uppercase; }
@@ -99,6 +108,9 @@ blockquote {
   .link:hover {
     color: #00e0d0;
     text-decoration: none; }
+  .link:active {
+    color: #00e0d0;
+    text-decoration: none !important; }
 
 .sc {
   background-size: cover;

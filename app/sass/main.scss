@@ -14,12 +14,19 @@ html, body {
     overflow-x: hidden;
 }
 
-a:hover{
-    text-decoration: none;
-}
-
-a:active{
-    text-decoration: none !important;
+a {
+    &:link{
+        text-decoration: none;
+    }
+    &:link{
+        text-decoration: none;
+    }
+    &:link{
+        text-decoration: none;
+    }
+    &:link{
+        text-decoration: none;
+    }
 }
 
 blockquote {
@@ -36,8 +43,12 @@ blockquote {
     }
     &__bottom {
         @include upcase;
-        padding: 10px;
+        padding-right: 10px;
         display: inline-block;
+        color:white;
+        &:hover{
+            text-decoration: none;
+        }
     }
 }
 
@@ -55,6 +66,10 @@ blockquote {
     &:hover {
         color: $blue;
         text-decoration: none;
+    }
+    &:active {
+        color: $blue;
+        text-decoration: none !important;
     }
 }
 
