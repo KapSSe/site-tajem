@@ -7,528 +7,617 @@
 
 @import '_colors';
 
-blockquote{
-    border:none;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none !important;
+}
+
+blockquote {
+    border: none;
     font-size: 16px;
 }
 
-.row-mg{
-    margin-top:20px;
-    margin-bottom: 20px;
-}
-
-.row-mg-md{
-    margin-top:40px;
-    margin-bottom: 40px;
-}
-
-.row-mg-big{
-    margin-top:80px;
-    margin-bottom: 80px;
-}
-
-.row-mg-top{
-    margin-top:15vh;
-}
-
-.row-video{
-    margin-top: 200px;
-    margin-bottom:200px;
-}
-
-.row-social{
-    margin-top:25px;
-}
-
-.menu{
+.menu {
     line-height: 30px;
-    &__item{
+    &__item {
         @include upcase;
-        padding:10px;
-        display:inline-block;
+        padding: 10px;
+        display: inline-block;
     }
-    &__bottom{
+    &__bottom {
         @include upcase;
-        padding:10px;
-        display:inline-block;
+        padding: 10px;
+        display: inline-block;
     }
 }
 
-.upc{
+.upc {
     @include upcase;
 }
 
-.bol{
+.bol {
     @include bold;
 }
 
-.link{
+.link {
     @include text-color-wt;
     text-decoration: none;
-    &:hover{
-        color:$blue;
+    &:hover {
+        color: $blue;
         text-decoration: none;
     }
-    
 }
 
-
-.sc {
+.sc{
     background-size: cover;
-    &-welcome{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &-welcome {
+        padding-top: 20px;
+        padding-bottom: 0px;
         background: url(../res/img/bg_top.png);
         height: 100vh;
+        min-height: 650px;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    &-video{
+    &-video {
         background: url(../res/img/bg_video.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
+        height: 70vh;
+        position: relative;
     }
-    &-team{
+    &-team {
         background: url(../res/img/bg_team.png);
         background-repeat: no-repeat;
         background-size: cover;
-        color:white;
+        color: white;
     }
-     &-about{
+    &-about {
         background: url(../res/img/bg_peoplesay.png);
         background-repeat: no-repeat;
         background-size: cover;
-        color:white;
+        color: white;
     }
-    &-footer{
+    &-footer {
         background: url(../res/img/bg_footer.png);
         background-repeat: no-repeat;
         background-size: cover;
-        color:white;
-    }  
+        color: white;
+    }
 }
 
-.heading{
-    &-carousel{
-        font-size:2em;
+.heading {
+    &-carousel {
+        font-size: 2em;
     }
-    &-story{
-        font-size:2em;
+    &-story {
+        font-size: 2em;
+        margin:0;
     }
-    &-expertise{
-        font-size:2.5em;
+    &-expertise {
+        font-size: 2.5em;
     }
-    &-team{
-        font-size:2.5em;
+    &-team {
+        font-size: 2.5em;
     }
-    &-gal{
-        font-size:2.5em;
+    &-gal {
+        font-size: 2.5em;
     }
-    &-news{
-        font-size:2.5em;
+    &-news {
+        font-size: 2.5em;
     }
-    &-client{
-        font-size:2.5em;
+    &-client {
+        font-size: 2.5em;
     }
-    &-footer{
+    &-footer {
         font-size: 1.5em;
     }
+    &-gal {
+        text-align: left;
+    }
 }
 
-.text{
-    &-carousel{
+.text {
+    &-carousel {
         font-size: 1em;
         line-height: 1.75em;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
-     &-story{
+    &-story {
         font-size: 1em;
         line-height: 1.6em;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
-     &-expertise{
+    &-expertise {
         font-size: 0.9em;
         line-height: 1.6em;
     }
-     &-blockquote{
+    &-blockquote {
         font-size: 1em;
         line-height: 1.9em;
     }
-     &-footer{
-        font-size:0.85em;
+    &-footer {
+        font-size: 0.85em;
         line-height: 1.6em;
     }
-    &-become{
+    &-become {
         display: block;
     }
 }
 
-.carousel{
-    margin:5vh auto;
+.carousel {
+    margin-top:20vh;
+    margin-left: auto;
+    margin-right:auto;
     width: 70%;
+    min-height: 385px;
 }
 
-.carousel-control{
-    display: none;
+ .carousel-indicators {
+        top:50vh;
 }
 
-.carousel-heading:after{
-    margin:35px auto;
-    content:"";
+.carousel-indicators li.active {
+    background: $blue;
+}
+
+.heading-carousel:after {
+    margin: 35px auto;
+    content: "";
     display: block;
     height: 1px;
-    width:50px;
-    background:$blue;
+    width: 50px;
+    background: $blue;
 }
 
-.team-des-after:after{
-    margin:35px auto;
-    content:"";
+.row-expertise{
+    margin-top:80px;
+    margin-bottom:80px;
+}
+
+.team-subheading{
+    margin-bottom:60px;
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.row-teams{
+    margin-top:40px;
+    margin-bottom:40px;
+    &-join{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}
+
+.join{
+    margin-bottom:40px;
+}
+
+.subheading-expertise:after {
+    margin: 35px auto;
+    content: "";
     display: block;
     height: 1px;
-    width:100%;
-    background:$white;
+    width: 50px;
+    background: $black;
 }
 
-.team-subheading:after{
-    margin:35px auto;
-    content:"";
+.team-des-after:after {
+    margin: 35px auto;
+    content: "";
     display: block;
     height: 1px;
-    width:70px;
-    background:$white;
+    width: 100%;
+    background: $white;
 }
 
-.carousel-inner{
+.team-subheading:after {
+    margin: 35px auto;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 50px;
+    background: $white;
+}
+
+.carousel-inner {
     @include text-color-wt;
-    height: 50vh;
 }
 
-.btn-default{
+.btn-default {
     text-transform: uppercase;
-    color:$blue;
+    color: $blue;
+    margin: 0px !important;
     background: none;
     border: 1px solid $blue;
-    padding:10px;
-    &:hover{
+    padding: 10px;
+    &:hover {
         background: none;
-        color:$blue;
+        color: $blue;
         border: 1px solid $blue;
     }
 }
 
-.story-heading{
-    margin:0;
+.story-heading {
+    margin: 0;
 }
 
-.story-content{
-    width:500px;
+.video-link {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
 }
 
-.video-link{
-display: inline-block;
-margin-left: 45%;
-margin-top:22.5%;
-margin-bottom:22.5%;
+
+.team-photo {
+    width: 220px;
 }
 
-.expertise-img{
+.expertise-img {
     height: 42px;
 }
 
-.gal-heading, .gal-link, .bottom-mark{
-    display: inline-block;
+.gal-heading{
+    margin-bottom: 80px;
 }
 
-.gal-link{
+.heading-gal{
+    margin:0;
+    display: inline;
+}
+
+.gal-link {
+    display: inline;
     margin-left:60%;
 }
 
-.gal-wrap{
-    margin: 0 auto;
-    font-size: 0px;
+.right-arrow{
+    width: 12px;
+}
+.gal-wrap {
+    column-count: 4;
+    column-gap: 5px;
 }
 
-.gal-item{
+.gal-item {
     display: inline-block;
-    width: 16.6666%;
-}
-
-.clients-container{
+    padding-bottom: 5px;
     width: 100%;
+    margin: 0;
 }
 
-.form-heading, .form-control, .btn-default{
-    margin:20px;
-}
-.form-heading{
-    margin-bottom:50px;
-}
-.table-heading{
-    margin-left:20px;
-    margin-bottom:30px;
+.gal-load{
+    margin-top:60px;
 }
 
-.form-control{
-    border-radius:0;
+.form-heading,
+.form-control,
+.btn-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.clients-table{
-    font-size:0;
+.form-control {
+    border-radius: 0;
 }
 
-.clients-items{
+.form-heading {
+    margin-bottom: 50px;
+}
+
+.heading-client {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.clients-table {
+    font-size: 0;
+}
+
+.clients-items {
     display: inline-block;
-	width: 50%;
-	padding: 20px;
-	box-sizing: border-box;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.fa-map-marker{
+.fa-map-marker {
     padding-right: 20px;
 }
 
-
-.container-icons{
-    margin-top:44px;
+.container-icons {
+    margin-top: 44px;
     display: block;
     float: none;
     clear: both;
 }
 
-.form-group-bot{
+.form-group-bot {
     font-size: 0;
 }
 
-.mail-input{
+.mail-input {
     display: inline-block;
     background: transparent;
     padding: 10px;
-    margin-top:30px;
+    margin-top: 30px;
     border: 2px solid grey;
     font-size: 12px;
     padding: 12px;
-    }
+}
 
+.bt-bot {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 0px;
+    background: gray url(../res/img/button_bottom.png) center no-repeat;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    width: 75px;
+    height: 45px;
+    vertical-align: bottom;
+}
 
- .bt-bot{
-     display: inline-block;
-     margin-top:30px;
-     font-size: 0px;
-     background: gray url(../res/img/button_bottom.png) center no-repeat;
-     border: none;
-     outline: none;
-     margin-left: 20px;
-     width: 75px;
-     height: 45px;
-     vertical-align: bottom;
- }
-
-
-.footer-icon{
-    float:left;
+.footer-icon {
+    float: left;
     margin-right: 10px;
 }
 
-.text-footer{
+.text-footer {
+    margin-top:40px;
+    margin-bottom:40px;
     overflow: auto;
 }
 
+.row-social {
+    margin-top: 25px;
+}
 
-@media all and (max-height:750px){
+.social-icons{
+    margin-top:10px;
+    margin-bottom:10px;
+}
 
-    .carousel-indicators{
+@media all and (max-height:750px) {
+    
+    .carousel-indicators {
         display: none;
     }
-
-    .carousel-control{
-        display: initial;
-    }
-
-    .carousel{
-    margin:0 auto;
-    width: 70%;
 }
 
-}
-
-@media all and (max-width:1200px){
-    body{
+@media all and (max-width:1200px) {
+    
+    body {
         font-size: 12px;
     }
-    
-    .carousel{
-    margin-top:4vh;
-    width: 500px;
-    }
-    
-    .gal-link{
-    margin-left:0;
-}
 
-    .clients-items img{
-        width:100px;
+    .sc{
+        padding-top:50px;
+        padding-bottom: 50px;
     }
 
+    .gal-link {
+        display: block;
+        margin: 0;
+    }
+
+    .heading-gal {
+        text-align: center;
+    }
+
+    .gal-wrap {
+        margin: 0 auto;
+        column-count: 3;
+        
+    }
+
+    .clients-items img {
+        width: 100px;
+    }
 }
 
-@media all and (max-width:992px){
-
-
-    .team-photo{
+@media all and (max-width:992px) {
+    .team-photo {
         width: 100%;
     }
 
-    .video-link{
-        margin-left: 44%;
-    }
-
-    .row-mg{
-        margin:10px 0;
+    .heading-news,
+    .heading-client {
+        font-size: 2em;
     }
     
-    .heading-news, .heading-client{
-        font-size:1.75em;
-    }
-   
-    .footer-left, .footer-center, .footer-right{
+    .footer-left,
+    .footer-center,
+    .footer-right {
         display: block;
-        width:100%;
+        width: 100%;
         text-align: center;
     }
-
-    .footer-icon{
+    
+    .footer-icon {
         float: none;
         padding: 10px;
-    }    
+    }
+    
+    .text-footer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container-icons{
+        margin-top:0;
+    }
 }
 
-@media all and (max-width:768px){
- 
-    .nav{
+@media all and (max-width:768px) {
+    
+    .nav {
         display: none;
     }
-
-    .content-resp-center{
-        text-align: center;        
-    }
-
-    .team-photo{
-        width: 70%;
-    }
-
-    .video-link{
-        margin-left: 40%;
-    }
-
-    .heading-gal{
+    .content-resp-center {
         text-align: center;
     }
 
-    .gal-link{
-        margin-left:40%;
+    .sc{
+        padding-top:30px;
+        padding-bottom: 30px;
     }
 
-    .gal-item{
-        display: block;
-        margin:auto;
+    .row-expertise{
+        margin-top:20px;
+        margin-bottom:20px;
+        margin-left:0;
+        margin-right:0;
+        width: 100%;
+    }
+
+    .become{
+        &-text{
+            margin-top:40px !important;
+        }
+        &-btn{
+            margin-top:40px !important;
+            margin-bottom: 40px !important;
+        }
+    }
+
+    .team-photo {
         width: 70%;
-        padding: 10px;
     }
 
-    .story-content{
-         margin: 0 auto;
-         width:87%;
+    .row-teams{
+        margin:0;
     }
 
-    .team-des-after:after{
+    .gal-heading{
+        margin-bottom: 40px;
+    }
+
+    .gal-wrap {
+        margin: 0 auto;
+        column-count: 2;
+        column-gap: 5px;
+    }
+
+    .gal-item {
+        padding-bottom: 5px;
+    }
+
+    .heading-story{
+        margin-top:10%;
+    }
+
+    .team-des-after{
+        font-size: 15px;
+    }
+
+    .team-des-after:after {
         display: none;
     }
 
-    .form-control{
-        width: 80%;
-    }
-
-    .menu{
-        margin-top:2vh;
+    .clients-items{
         text-align: center;
     }
 
-    .text-expertise{
+    .menu {
+        margin-top: 2vh;
+        text-align: center;
+    }
+    .text-expertise {
         margin: 5% 20%;
     }
 
-    .clients-items img{
-        width:50%;
+    .clients-items img {
+        width: 45%;
+    }
+
+    .contacts{
+        font-size: 1.5em;
+    }
+
+    .clients{
+        width: 100%;
+    }
+
+    .form-heading{
+        width: 100%;
+    }
+
+    .form-group{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .heading-client{
+        text-align: center;
+        font-size: 2em !important;
     }
 
 }
 
-@media all and (max-width:576px){
-    .carousel{
-    margin-top:1vh;
-    }
+@media all and (max-width:576px) {
 
-    .row-mg-md{
-        margin-top:10px;
-        margin-bottom: 0;
-    }
-
-    body{
+    body {
         font-size: 10px;
     }
 
-    .menu__item{
+    .video-link {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+    .menu__item {
         display: list-item;
         font-size: 14px;
         text-align: right;
-        padding:0;
+        padding: 0;
         margin-bottom: 10px;
     }
 
-    .carousel{
-        margin-top:-2vh;
-        width: 310px;
+    .heading-carousel{
+        width: 100%;
     }
-    .carousel-indicators{
+
+    .carousel{
+        margin-top:10%;
+        width: 90%;
+    }
+
+    .carousel-indicators {
         display: none;
     }
-
-    .btn-default{
-    text-transform: uppercase;
-    color:$blue;
-    background: none;
-    border: 1px solid $blue;
-    padding:5px;
-  
-}
-
-
-    .text-carousel{
-        font-size: 10px;
-    }
-
-    .video-link{
-        margin-left: 28%;
-    }
-
-    .heading-team{
+   
+    .heading-team {
         font-size: 2.2em;
     }
 
-    .heading-client, .clients-items{
+    .clients-items {
         text-align: center;
     }
 
-    .row-mg-big{
-        margin-top:60px;
-        margin-bottom:60px;
+    .bt-bot{
+        margin-left:0;
     }
 
-    .row-mg{
-    margin-top:10px;
-    margin-bottom: 10px;
+    .mail-input{
     }
-
-    .container-icons{
-    margin-top:24px;
-}
-
 
 }
