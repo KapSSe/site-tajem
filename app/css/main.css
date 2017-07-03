@@ -1,5 +1,6 @@
 /*Global import*/
 /*Project import*/
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 html, body {
   max-width: 100%;
   overflow-x: hidden; }
@@ -55,6 +56,7 @@ blockquote {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 70vh;
     position: relative; }
   .sc-team {
@@ -73,35 +75,40 @@ blockquote {
     background-size: cover;
     color: white; }
 
-.heading-carousel {
-  font-size: 2em; }
+.heading-carousel-top {
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif; }
 
 .heading-story {
-  font-size: 2em;
-  margin: 0; }
+  font-size: 2.5em;
+  margin: 0;
+  font-family: 'Playfair Display', serif; }
 
 .heading-expertise {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif; }
 
 .heading-team {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif; }
 
 .heading-gal {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif; }
 
 .heading-news {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif; }
 
 .heading-client {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif; }
 
 .heading-footer {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-family: 'Playfair Display', serif; }
 
-.heading-gal {
-  text-align: left; }
-
-.text-carousel {
+.text-carousel-top {
   font-size: 1em;
   line-height: 1.75em;
   margin-top: 40px;
@@ -128,20 +135,20 @@ blockquote {
 .text-become {
   display: block; }
 
-.carousel {
+.carousel-top {
   margin-top: 20vh;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
   min-height: 385px; }
 
-.carousel-indicators {
-  top: 50vh; }
+.carousel-indicators-top {
+  top: 60vh; }
 
-.carousel-indicators li.active {
+.carousel-indicators-top li.active {
   background: #00e0d0; }
 
-.heading-carousel:after {
+.heading-carousel-top:after {
   margin: 35px auto;
   content: "";
   display: block;
@@ -256,8 +263,101 @@ blockquote {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+.coma {
+  display: block;
+  margin: 60px auto; }
+
+.quote-author {
+  margin: 60px auto; }
+
+.carousel-indicators-bot li {
+  border: none;
+  width: 50px;
+  height: 40px; }
+
+.carousel-indicators-bot li.active {
+  background-size: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; }
+
+.carousel-indicators-bot {
+  bottom: 10px; }
+
+.carousel-inner-bottom {
+  position: relative; }
+
+.slide-left {
+  position: absolute;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  bottom: 30px;
+  left: 390px;
+  background-image: url(../res/img/arrow_left.png);
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.slide-right {
+  position: absolute;
+  z-index: 100;
+  width: 30px;
+  height: 30px;
+  bottom: 30px;
+  right: 390px;
+  background-image: url(../res/img/arrow_right.png);
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.indicator-img-1 {
+  background-image: url(../res/img/face_1.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.indicator-img-2 {
+  background-image: url(../res/img/face_2.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.indicator-img-3 {
+  background-image: url(../res/img/face_3.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.indicator-img-4 {
+  background-image: url(../res/img/face_4.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.indicator-img-5 {
+  background-image: url(../res/img/face_5.png);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.quote-author-name {
+  display: block;
+  font-size: 1.5em; }
+
+.quote-author-position {
+  display: block;
+  margin: 5px auto 140px;
+  font-size: 1em; }
+
 .form-control {
   border-radius: 0; }
+
+textarea:focus {
+  border-color: #00e0d0 !important; }
+
+input:focus {
+  border-color: #00e0d0 !important; }
 
 .form-heading {
   margin-bottom: 50px; }
@@ -325,7 +425,7 @@ blockquote {
   margin-bottom: 10px; }
 
 @media all and (max-height: 750px) {
-  .carousel-indicators {
+  .carousel-indicators-top {
     display: none; } }
 
 @media all and (max-width: 1200px) {
@@ -439,12 +539,12 @@ blockquote {
     text-align: right;
     padding: 0;
     margin-bottom: 10px; }
-  .heading-carousel {
+  .heading-carousel-top {
     width: 100%; }
-  .carousel {
+  .carousel-top {
     margin-top: 10%;
     width: 90%; }
-  .carousel-indicators {
+  .carousel-indicators-top {
     display: none; }
   .heading-team {
     font-size: 2.2em; }
