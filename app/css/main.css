@@ -1,6 +1,67 @@
 /*Global import*/
 /*Project import*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+.logobiganimate, .expertise-item, .gal-item {
+  visibility: hidden; }
+
+.init {
+  opacity: 1;
+  visibility: visible; }
+
+.exp-1 {
+  animation-delay: 0.1s; }
+
+.exp-2 {
+  animation-delay: 0.4s; }
+
+.exp-3 {
+  animation-delay: 0.7s; }
+
+.exp-4 {
+  animation-delay: 0.1s; }
+
+.exp-5 {
+  animation-delay: 0.4s; }
+
+.exp-6 {
+  animation-delay: 0.7s; }
+
+.gal-1 {
+  animation-delay: 0.1s; }
+
+.gal-2 {
+  animation-delay: 0.1s; }
+
+.gal-3 {
+  animation-delay: 0.1s; }
+
+.gal-4 {
+  animation-delay: 0.4s; }
+
+.gal-5 {
+  animation-delay: 0.4s; }
+
+.gal-6 {
+  animation-delay: 0.4s; }
+
+.gal-7 {
+  animation-delay: 0.7s; }
+
+.gal-8 {
+  animation-delay: 0.7s; }
+
+.gal-9 {
+  animation-delay: 0.7s; }
+
+.gal-10 {
+  animation-delay: 1s; }
+
+.gal-11 {
+  animation-delay: 1s; }
+
+.gal-12 {
+  animation-delay: 1s; }
+
 html, body {
   max-width: 100%;
   overflow-x: hidden; }
@@ -77,36 +138,44 @@ blockquote {
 
 .heading-carousel-top {
   font-size: 2.5em;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
   font-family: 'Playfair Display', serif; }
 
 .heading-story {
   font-size: 2.5em;
+  letter-spacing: 0.07em;
   margin: 0;
   font-family: 'Playfair Display', serif; }
 
 .heading-expertise {
   font-size: 2.5em;
+  letter-spacing: 0.07em;
   font-family: 'Playfair Display', serif; }
 
 .heading-team {
   font-size: 2.5em;
+  letter-spacing: 0.07em;
   font-family: 'Playfair Display', serif; }
 
 .heading-gal {
   font-size: 2.5em;
+  letter-spacing: 0.07em;
   font-family: 'Playfair Display', serif; }
 
 .heading-news {
   font-size: 2.5em;
+  letter-spacing: 0.07em;
   font-family: 'Playfair Display', serif; }
 
 .heading-client {
   font-size: 2.5em;
+  letter-spacing: 0.07em;
   font-family: 'Playfair Display', serif; }
 
 .heading-footer {
   font-size: 1.5em;
-  font-family: 'Playfair Display', serif; }
+  letter-spacing: 0.025em; }
 
 .text-carousel-top {
   font-size: 1em;
@@ -203,17 +272,22 @@ blockquote {
 .carousel-inner {
   color: #ffffff; }
 
-.btn-default {
+button {
   text-transform: uppercase;
   color: #00e0d0;
   margin: 0px !important;
-  background: none;
+  background: transparent !important;
   border: 1px solid #00e0d0;
-  padding: 10px; }
-  .btn-default:hover {
-    background: none;
-    color: #00e0d0;
-    border: 1px solid #00e0d0; }
+  padding: 10px;
+  outline: none; }
+  button:active {
+    background: none !important;
+    color: #bef7f3;
+    border: 1px solid #bef7f3; }
+  button.wt:active {
+    background: none !important;
+    color: #30235f;
+    border: 1px solid #30235f; }
 
 .story-heading {
   margin: 0; }
@@ -400,7 +474,7 @@ input:focus {
   display: inline-block;
   margin-top: 30px;
   font-size: 0px;
-  background: gray url(../res/img/button_bottom.png) center no-repeat;
+  background: gray url(../res/img/button_bottom.png) center no-repeat !important;
   border: none;
   outline: none;
   margin-left: 20px;

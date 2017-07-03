@@ -1,0 +1,68 @@
+.logobiganimate, .expertise-item, .gal-item{
+    visibility: hidden;
+}
+
+.init{
+    opacity: 1;
+    visibility: visible;
+}
+
+.exp{
+    &-1{
+        animation-delay: 0.1s;
+    }
+    &-2{
+        animation-delay: 0.4s;
+    }
+    &-3{
+        animation-delay: 0.7s;
+    }
+    &-4{
+        animation-delay: 0.1s;
+    }
+    &-5{
+        animation-delay: 0.4s;
+    }
+    &-6{
+        animation-delay: 0.7s;
+    }
+}
+
+.gal{
+    &-1{
+        animation-delay: 0.1s;
+    }
+    &-2{
+        animation-delay: 0.1s;
+    }
+    &-3{
+        animation-delay: 0.1s;
+    }
+    &-4{
+        animation-delay: 0.4s;
+    }
+    &-5{
+        animation-delay: 0.4s;
+    }
+    &-6{
+        animation-delay: 0.4s;
+    }
+    &-7{
+        animation-delay: 0.7s;
+    }
+    &-8{
+        animation-delay: 0.7s;
+    }
+    &-9{
+        animation-delay: 0.7s;
+    }
+    &-10{
+        animation-delay: 1s;
+    }
+    &-11{
+        animation-delay: 1s;
+    }
+    &-12{
+        animation-delay: 1s;
+    }
+}

@@ -6,6 +6,7 @@
 /*Project import*/
 
 @import '_colors';
+@import 'animations';
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 html, body {
@@ -102,36 +103,44 @@ blockquote {
 .heading {
     &-carousel-top {
         font-size: 2.5em;
+        text-transform: capitalize;
+        letter-spacing: 0.03em;
         font-family: 'Playfair Display', serif;
     }
     &-story {
         font-size: 2.5em;
+        letter-spacing:0.07em;
         margin:0;
         font-family: 'Playfair Display', serif;
     }
     &-expertise {
         font-size: 2.5em;
+        letter-spacing:0.07em;
         font-family: 'Playfair Display', serif;
     }
     &-team {
         font-size: 2.5em;
+        letter-spacing:0.07em;
         font-family: 'Playfair Display', serif;
     }
     &-gal {
         font-size: 2.5em;
+        letter-spacing:0.07em;
         font-family: 'Playfair Display', serif;
     }
     &-news {
         font-size: 2.5em;
+        letter-spacing:0.07em;
         font-family: 'Playfair Display', serif;
     }
     &-client {
         font-size: 2.5em;
+        letter-spacing:0.07em;
         font-family: 'Playfair Display', serif;
     }
     &-footer {
         font-size: 1.5em;
-        font-family: 'Playfair Display', serif;
+        letter-spacing:0.025em;
     }
 
 }
@@ -247,17 +256,23 @@ blockquote {
     @include text-color-wt;
 }
 
-.btn-default {
+button {
     text-transform: uppercase;
     color: $blue;
     margin: 0px !important;
-    background: none;
+    background: transparent !important;
     border: 1px solid $blue;
     padding: 10px;
-    &:hover {
-        background: none;
-        color: $blue;
-        border: 1px solid $blue;
+    outline: none;
+    &:active {
+        background: none !important;
+        color: #bef7f3;
+        border: 1px solid #bef7f3;
+    }
+    &.wt:active {
+        background: none !important;
+        color: $violet;
+        border: 1px solid $violet;
     }
 }
 
@@ -483,7 +498,7 @@ input:focus{
     display: inline-block;
     margin-top: 30px;
     font-size: 0px;
-    background: gray url(../res/img/button_bottom.png) center no-repeat;
+    background: gray url(../res/img/button_bottom.png) center no-repeat !important;
     border: none;
     outline: none;
     margin-left: 20px;
@@ -511,6 +526,7 @@ input:focus{
     margin-top:10px;
     margin-bottom:10px;
 }
+
 
 @media all and (max-height:750px) {
     
