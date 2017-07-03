@@ -1,7 +1,7 @@
 /*Global import*/
 /*Project import*/
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-.logobiganimate, .expertise-item, .gal-item, .th, .td, .team_photo {
+.logobiganimate, .expertise-item, .gal-item, .th, .td, .team-photo {
   visibility: hidden; }
 
 .init {

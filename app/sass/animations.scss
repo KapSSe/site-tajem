@@ -1,4 +1,4 @@
-.logobiganimate, .expertise-item, .gal-item, .th, .td, .team_photo{
+.logobiganimate, .expertise-item, .gal-item, .th, .td, .team-photo{
     visibility: hidden;
 }
 
@@ -87,6 +87,7 @@
 }
 
 .td{
+    
     &-3{
         animation-delay: 0.1s;
     }
