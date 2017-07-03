@@ -347,7 +347,8 @@ button {
   transform: translateX(-50%); }
 
 .team-photo {
-  width: 220px; }
+  width: 220px;
+  box-shadow: 2px 2px 3px black, 3px 2px 12px black; }
 
 .expertise-img {
   height: 42px; }
