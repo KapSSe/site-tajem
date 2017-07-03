@@ -3,7 +3,7 @@
                 $('.nav').slideToggle();
             });
 			$('#menu').click(function () {
-                $('.text-carousel').slideToggle();
+                $('.text-carousel-top').slideToggle();
 				$('.carousel-control').slideToggle();
             });
         });
