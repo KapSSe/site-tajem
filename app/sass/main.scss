@@ -15,16 +15,8 @@ html, body {
 }
 
 a {
-    &:link{
-        text-decoration: none;
-    }
-    &:link{
-        text-decoration: none;
-    }
-    &:link{
-        text-decoration: none;
-    }
-    &:link{
+    &:hover{
+        transition: 0.3s;
         text-decoration: none;
     }
 }
@@ -94,6 +86,7 @@ blockquote {
         background-repeat:no-repeat;
         height: 70vh;
         position: relative;
+         
     }
     &-team {
         background: url(../res/img/bg_team.png);
@@ -300,8 +293,11 @@ button {
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
+    &:hover{
+        opacity: 0.5;
+        transition: 0.5s;
+    }
 }
-
 
 .team-photo {
     width: 220px;
@@ -485,9 +481,7 @@ input:focus{
     box-sizing: border-box;
 }
 
-.fa-map-marker {
-    padding-right: 20px;
-}
+
 
 .container-icons {
     margin-top: 44px;
@@ -503,7 +497,6 @@ input:focus{
 .mail-input {
     display: inline-block;
     background: transparent;
-    padding: 10px;
     margin-top: 30px;
     border: 2px solid grey;
     font-size: 12px;
@@ -525,13 +518,23 @@ input:focus{
 
 .footer-icon {
     float: left;
-    margin-right: 10px;
+    padding: 0px;
 }
 
 .text-footer {
     margin-top:40px;
     margin-bottom:40px;
     overflow: auto;
+    color: white;
+}
+
+
+.text-link{
+    display: block;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-left: auto;
+    line-height: 15px;
 }
 
 .row-social {
@@ -600,18 +603,47 @@ input:focus{
         text-align: center;
     }
     
-    .footer-icon {
-        float: none;
-        padding: 10px;
-    }
-    
-    .text-footer {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
     .container-icons{
-        margin-top:0;
+        margin-top:20px;
     }
+
+    .text-footer{
+        font-size: 1.2em;
+    }
+
+    .text-link{
+        margin: 10px auto;
+        font-size: 1.2em;
+    }
+
+    .footer-icon{
+        float: none;
+        margin:auto;
+    }
+
+    .menu__bottom{
+        font-size: 1.2em;
+        color: $blue;
+    }
+
+    .form-group{
+        margin-bottom: 5%;
+    }
+
+    .mail-input{
+        width: 50%;
+        text-align: center;
+    }
+
+
+    .soc-ic{
+        padding: 2%;
+    }
+
+    .soc-ic img {
+        width: 45px;
+    }
+
 }
 
 @media all and (max-width:768px) {

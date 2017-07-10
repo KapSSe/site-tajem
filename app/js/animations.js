@@ -7,6 +7,7 @@ $(document).scroll(function(){
               $('.exp-4').toggleClass('init animated fadeInLeft', $(this).scrollTop() > 1500);
               $('.exp-5').toggleClass('init animated fadeInUp', $(this).scrollTop() > 1500);
               $('.exp-6').toggleClass('init animated fadeInRight', $(this).scrollTop() > 1500);
+  
               $('.th-1').toggleClass('init animated bounceInLeft', $(this).scrollTop() > 2200);
               $('.td-1').toggleClass('init animated fadeInUpBig', $(this).scrollTop() > 2200);
               $('.tp-1').toggleClass('init animated flipInX', $(this).scrollTop() > 2200);       
@@ -19,16 +20,17 @@ $(document).scroll(function(){
               $('.th-4').toggleClass('init animated bounceInRight', $(this).scrollTop() > 2200);
               $('.td-4').toggleClass('init animated fadeInUpBig', $(this).scrollTop() > 2200);
               $('.tp-4').toggleClass('init animated flipInX', $(this).scrollTop() > 2200);
-              $('.gal-1').toggleClass('init animated zoomInRight', $(this).scrollTop() > 2950);
-              $('.gal-2').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3200);
-              $('.gal-3').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
-              $('.gal-4').toggleClass('init animated zoomInRight', $(this).scrollTop() > 2950);
-              $('.gal-5').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3200);
-              $('.gal-6').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
-              $('.gal-7').toggleClass('init animated zoomInRight', $(this).scrollTop() > 2950);
-              $('.gal-8').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3200);
-              $('.gal-9').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
-              $('.gal-10').toggleClass('init animated zoomInRight', $(this).scrollTop() > 2950);
-              $('.gal-11').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3200);
-              $('.gal-12').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
+              
+              $('.gal-1').toggleClass('init animated zoomInRight', $(this).scrollTop() > 3100);
+              $('.gal-2').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
+              $('.gal-3').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3500);
+              $('.gal-4').toggleClass('init animated zoomInRight', $(this).scrollTop() > 3100);
+              $('.gal-5').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
+              $('.gal-6').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3500);
+              $('.gal-7').toggleClass('init animated zoomInRight', $(this).scrollTop() > 3100);
+              $('.gal-8').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
+              $('.gal-9').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3500);
+              $('.gal-10').toggleClass('init animated zoomInRight', $(this).scrollTop() > 3100);
+              $('.gal-11').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3400);
+              $('.gal-12').toggleClass('init animated zoomInLeft', $(this).scrollTop() > 3500);
  	});
