@@ -119,7 +119,7 @@ html, body {
   /* centers the loading animation horizontally one the screen */
   top: 50%;
   /* centers the loading animation vertically one the screen */
-  background-image: url(..res/img/spinner.gif);
+  background-image: url(../res/img/spinner.gif);
   /* path to your loading animation */
   background-repeat: no-repeat;
   background-position: center;
